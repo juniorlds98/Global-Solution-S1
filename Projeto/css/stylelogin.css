@@ -8,14 +8,16 @@
     padding-right: 590px;
 
 }
-
+label{
+    color: #fff;
+}
 img{
     width: 40px;
     cursor: pointer;
 }
 
 body{
-    background-image: url(/Projeto/src/img/inspiring-view-sunset-light\ 1.png);
+    background-image: url(./../src/img/inspiring-view-sunset-light1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -69,13 +71,10 @@ body{
 }
 
 .senha{
-    padding-right: 420px;
-    margin-top: 24px;    
+    margin-top: 24px;
 }
-
 .email{
-    padding-right: 424px;
-    margin-top: 45px;    
+    margin-top: 45px;
 }
 
 .boas--vindas{
