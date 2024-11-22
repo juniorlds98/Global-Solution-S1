@@ -28,7 +28,17 @@
   input, button {
     font-family: inherit;
   }
+
+  .main-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
   
+  main{
+    display: flex;
+  }
+
   /* Sidebar */
   .sidebar {
     width: 300px;
@@ -37,6 +47,7 @@
     border-right: 1px solid #ddd;
     height: 100vh;
     overflow-y: auto;
+    flex: 1;
   }
   
   .sidebar h2 {
@@ -80,12 +91,13 @@
   
   /* Barra de busca */
   .search-bar {
-    width: 100%;
+    width: 300px;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
+    flex-shrink: 0;
   }
   
   /* Tabela */
@@ -119,6 +131,12 @@
     color: red;
   }
   
+  .main-content{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+
   /* Dashboard */
   .dashboard {
     max-width: 1200px;
@@ -128,13 +146,16 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 3;
   }
   
   .header {
     display: flex;
+    flex-direction: column; 
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
   }
   
   .header h1 {

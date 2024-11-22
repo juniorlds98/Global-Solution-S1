@@ -30,10 +30,7 @@
             <img src="/Projeto/src/img/User.svg" alt="" class="footer-2">
         </section>
     </header>
-    <main>
-        <section class="projeto">
-            <p>Projetos</p>
-        </section>
+    <main class="main-layout">
         <aside class="sidebar">
             <section class="stats">
               <h2>Meta de energia no mês</h2>
@@ -127,88 +124,90 @@
             </section>
         </aside>
         </section>
-        <div class="dashboard">
-            <header class="header">
-              <h1>Análise de desempenho</h1>
-              <div class="actions">
-                <button class="btn btn-edit">✏️ Editar</button>
-                <button class="btn btn-analyze">📊 Análise</button>
-              </div>
-            </header>
-            <nav class="tabs">
-              <ul>
-                <li class="active">Economia</li>
-                <li>Desempenho</li>
-                <li>Distribuição</li>
-                <li>Previsão do tempo</li>
-                <li>Potência</li>
-                <li>Turbinas</li>
-                <li>Chaves</li>
-              </ul>
-            </nav>
-            <section class="statistics">
-              <div class="stat-group">
-                <div class="stat-item">
-                  <span class="label">Tributos</span>
-                  <span class="value">18%</span>
-                </div>
-                <div class="stat-item">
-                  <span class="label">Meta de valor</span>
-                  <span class="value positive">↑ 62%</span>
-                </div>
-                <div class="stat-item">
-                  <span class="label">kWh</span>
-                  <span class="value">480.000</span>
-                </div>
-              </div>
-              <div class="time-filter">
-                Últimos 7 dias
-              </div>
-            </section>
-            <section class="table-section">
-              <header class="table-header">
-                <span>Meses</span>
-                <div class="table-actions">
-                  <input type="text" placeholder="🔍" class="search" />
-                  <button class="btn">🔧</button>
-                  <button class="btn">📈</button>
+        <section class="main-content">
+          <div class="dashboard">
+              <header class="header">
+                <h1>Análise de desempenho</h1>
+                <div class="actions">
+                  <button class="btn btn-edit">✏️ Editar</button>
+                  <button class="btn btn-analyze">📊 Análise</button>
                 </div>
               </header>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Mês</th>
-                    <th>Status</th>
-                    <th>Produção kWh</th>
-                    <th>Capacidade usada</th>
-                    <th>Manutenção no mês</th>
-                    <th>Falhas (%)</th>
-                    <th>Meta</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Outubro</td>
-                    <td>Em andamento</td>
-                    <td>750.000</td>
-                    <td>88%</td>
-                    <td>Sim</td>
-                    <td>10%</td>
-                    <td class="down">↓ 3%</td>
-                  </tr>
-                  <tr>
-                    <td>Setembro</td>
-                    <td>Encerrado</td>
-                    <td>470.000</td>
-                    <td>44%</td>
-                    <td>Não</td>
-                    <td>8%</td>
-                    <td class="down">↓ 3%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-          </div>        
+              <nav class="tabs">
+                <ul>
+                  <li class="active">Economia</li>
+                  <li>Desempenho</li>
+                  <li>Distribuição</li>
+                  <li>Previsão do tempo</li>
+                  <li>Potência</li>
+                  <li>Turbinas</li>
+                  <li>Chaves</li>
+                </ul>
+              </nav>
+              <section class="statistics">
+                <div class="stat-group">
+                  <div class="stat-item">
+                    <span class="label">Tributos</span>
+                    <span class="value">18%</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="label">Meta de valor</span>
+                    <span class="value positive">↑ 62%</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="label">kWh</span>
+                    <span class="value">480.000</span>
+                  </div>
+                </div>
+                <div class="time-filter">
+                  Últimos 7 dias
+                </div>
+              </section>
+              <section class="table-section">
+                <header class="table-header">
+                  <span>Meses</span>
+                  <div class="table-actions">
+                    <input type="text" placeholder="🔍" class="search" />
+                    <button class="btn">🔧</button>
+                    <button class="btn">📈</button>
+                  </div>
+                </header>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Mês</th>
+                      <th>Status</th>
+                      <th>Produção kWh</th>
+                      <th>Capacidade usada</th>
+                      <th>Manutenção no mês</th>
+                      <th>Falhas (%)</th>
+                      <th>Meta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Outubro</td>
+                      <td>Em andamento</td>
+                      <td>750.000</td>
+                      <td>88%</td>
+                      <td>Sim</td>
+                      <td>10%</td>
+                      <td class="down">↓ 3%</td>
+                    </tr>
+                    <tr>
+                      <td>Setembro</td>
+                      <td>Encerrado</td>
+                      <td>470.000</td>
+                      <td>44%</td>
+                      <td>Não</td>
+                      <td>8%</td>
+                      <td class="down">↓ 3%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>    
+        </section>    
     </main>
     <footer>
     </footer>

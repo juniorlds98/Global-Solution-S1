@@ -17,8 +17,7 @@ img{
 }
 
 body{
-    background-image: url(./../src/img/inspiring-view-sunset-light1.png);
-    background-repeat: no-repeat;
+    background-image: url(./../src/img/inspiring-view-sunset-light\-1.png);
     background-size: cover;
     background-position: center;
     font-family: 'Inter', sans-serif;
