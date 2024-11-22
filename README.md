@@ -19,7 +19,7 @@ Este projeto é o front que utiliza a api feita em python, pórem existe dados m
 1. **Baixar o repositório:** Baixe o repositório do WebSite.
 
 ## Uso(com todas as funcionalidades)
-2. [**Hardware:** Carregar o código adaptado para ter a conexão com a rede e para a placa esp32 física e conectar os componentes.](https://github.com/CAIOMSa/Arduino-Gs/tree/main)
+1. [**Hardware:** Carregar o código adaptado para ter a conexão com a rede e para a placa esp32 física e conectar os componentes.](https://github.com/CAIOMSa/Arduino-Gs/tree/main)
 2. [**Api:** Executar a api em dispositivo que esteja na mesma rede da placa física ou hospedado em servidor.](https://github.com/CAIOMSa/Api-Python-Gs)
 3. **WebSite:** adaptar o config.js se necessário e executa-lo junto da api(não é necessário executar em server apache).
 
