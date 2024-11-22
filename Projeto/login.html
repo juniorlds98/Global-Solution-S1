@@ -14,34 +14,39 @@
     <main>
         <section class="total">
             <div class="voltar">
-                <a href="http://127.0.0.1:5500/Projeto/index.html">
-                    <img src="/Projeto/src/img/pngwing.com.png" alt="voltar">
+                <a href="./index.html">
+                    <img src="./src/img/pngwing.com.png" alt="voltar">
                 </a>
             </div>
             <div class="boas--vindas">
-                <h1>Ola, seja bem vindo!</h1>
+                <h1>Olá, seja bem vindo!</h1>
             </div>
+            <form action="/submit" method="post" id="frmLogin">
             <div class="email">
-                <h5>Email</h5>
+                <label><h5>Email/Nome do usuário</h5></label>
+                <input type="text" id="user" name="Usuário" class="input" placeholder="seuemail@exemplo.com ou Nome do usuario">
             </div>
-            <form action="/submit" method="post">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" class="input" placeholder="seuemail@exemplo.com">
-            </form>
             <div class="senha">
-                <h5>Senha</h5>
-            </div>
-            <form action="/submit" method="post">
-                <label for="senha" ></label>
+                <label ><h5>Senha</h5></label>
                 <input type="password" id="senha" class="input" name="senha" placeholder="*********">
-            </form>
+            </div>
             <div class="esqueceu--senha">
                 <h4>Esqueceu a senha?</h4>
             </div>
-            <button type="submit" class="continue">Continue</button>           
+            <button type="submit" class="continue">Continue</button>
+        </form>
         </section>
     </main>
     <footer>
     </footer>
 </body>
 </html>
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="conf.js"></script>
+<script src="login.js"></script>
+</body>
