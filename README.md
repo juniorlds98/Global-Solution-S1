@@ -1,4 +1,4 @@
-# WebSite Energia verde GS
+# WebSite Energia Verde GS
 ## Global Solution Semestre 1 - Caio, Junior e Wesley
  * Caio Martinez Saes RM: 560753
  * Wesley Santos Zimmer RM: 560264
