@@ -4,7 +4,6 @@ const tabelaHistorico = document.getElementById('tabelaDados')
 const metaMes = document.getElementById('metaMes')
 const quantMes = document.getElementById('quantMes')
 
-let tes
 function obterAnoMesAtual() {
     const dataAtual = new Date();
     const ano = dataAtual.getFullYear();
@@ -21,19 +20,19 @@ const generate = (json) => {
                     <tr>
                       <td>${dado.CreateMonth}</td>
                       <td>${(dado.CreateMonth === obterAnoMesAtual()) ? "Em andamento" : "Encerrado"}</td>
-                      <td>${dado.Produzido}</td>
+                      <td>${dado.Produzido/1000}</td>
                       <td>88%</td>
                       <td>Sim</td>
                       <td>10%</td>
-                      <td class="${(dado.Meta > dado.Armazenado) ? "down" : "up" }">${(dado.Meta > dado.Armazenado) ? "↓" : "↑" } ${((dado.Armazenado/dado.Meta) * 100).toFixed(1)}%</td>
+                      <td class="${(dado.Meta > dado.Armazenado/1000) ? "down" : "up" }">${(dado.Meta > dado.Armazenado/1000) ? "↓" : "↑" } ${(((dado.Armazenado/1000)/dado.Meta) * 100).toFixed(1)}%</td>
                     </tr>
     `).join('')
     const newMeta = `
-                <span class="percentage">${((json[json.length - 1].Armazenado/json[json.length - 1].Meta) * 100).toFixed(1)}%</span>
-                <span class="change ${(json[json.length - 1].Meta > json[json.length - 1].Armazenado) ? "down" : "up" }">${(json[json.length - 1].Meta > json[json.length - 1].Armazenado) ? "↓" : "↑" } ${((json[json.length - 1].Armazenado/json[json.length - 1].Meta) * 100).toFixed(1)}</span>`
+                <span class="percentage">${(((json[json.length - 1].Armazenado/1000)/json[json.length - 1].Meta) * 100).toFixed(1)}%</span>
+                <span class="change ${(json[json.length - 1].Meta > (json[json.length - 1].Armazenado/1000)) ? "down" : "up" }">${(json[json.length - 1].Meta > (json[json.length - 1].Armazenado/1000)) ? "↓" : "↑" } ${(((json[json.length - 1].Armazenado/1000)/json[json.length - 1].Meta) * 100).toFixed(1)}</span>`
     tabelaHistorico.innerHTML += newTable
     metaMes.innerHTML += newMeta
-    quantMes.innerHTML += json[json.length - 1].Distribuido
+    quantMes.innerHTML += json[json.length - 1].Distribuido/1000
 }
 if (userId > 0){
     try{
