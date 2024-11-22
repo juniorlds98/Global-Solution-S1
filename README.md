@@ -30,7 +30,7 @@ Este projeto é o front que utiliza a api feita em python, pórem existe dados m
    * [Prototipação feita no Figma](https://www.figma.com/design/OPlSzzW4CbEvgSkUZAsLvr/Global-solution?node-id=46-292&t=FrrN5v2sFehoWr9L-1)  
 
 ## Informações Adicionais
-* **Melhorias futuras:** Hospedar a api em um servidor e sistema de ranqueamento.
+* **Melhorias futuras:** Hospedar a api em um servidor,sistema de ranqueamento e detalhamento diario da geração de energia.
 
 ## Link dos demais repositorios:
 * [https://github.com/CAIOMSa/Api-Python-Gs](https://github.com/CAIOMSa/Api-Python-Gs)
