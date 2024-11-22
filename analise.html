@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório uso de energia mensal</title>
+    <link rel="stylesheet" href="./Projeto/css/styleanalise.css">
+</head>
+<body>
+    <header>
+        <section class="group-1">
+            <img src="/Projeto/src/img/Menu hamburger.svg" alt="" class="hamburger-1">
+            <p>Relatório uso energia mensal - Eficiência e Sustentabilidade</p>
+        </section>
+        <section class="group-2">
+            <div class="barra-pesquisa">
+                <select class="categoria">
+                    <option value="todos">Categorias</option>
+                    <option value="categoria1">Categoria 1</option>
+                    <option value="categoria1">Categoria 2</option>
+                </select>
+                <input type="text" class="input-pesquisa" placeholder="Procurar">
+            </div>
+            <select class="categoria-2">
+                <option value="todos">Eco</option>
+                <option value="categoria1">Eco 1</option>
+                <option value="categoria1">Eco 2</option>
+            </select>
+            <img src="/Projeto/src/img/Bell.svg" alt="" class="footer-1">
+            <img src="/Projeto/src/img/User.svg" alt="" class="footer-2">
+        </section>
+    </header>
+    <main>
+        <section class="projeto">
+            <p>Projetos</p>
+        </section>
+        <aside class="sidebar">
+            <section class="stats">
+              <h2>Meta de energia no mês</h2>
+              <div class="energy-goal">
+                <span class="percentage">75%</span>
+                <span class="change down">↓ 3</span>
+              </div>
+              <hr />
+              <div class="stat">
+                <span>Quantidade ao dia</span>
+                <strong>257</strong>
+                <span class="change down">↓ 3</span>
+              </div>
+              <div class="stat">
+                <span>Quantidade ao mês</span>
+                <strong>3008</strong>
+                <span class="change up">↑ 3</span>
+              </div>
+              <div class="stat">
+                <span>Status sistema</span>
+                <strong>Completo</strong>
+              </div>
+              <div class="stat">
+                <span>Tempo ligado</span>
+                <strong>158:57:32</strong>
+              </div>
+            </section>
+            <section class="table">
+              <input type="text" placeholder="Procure" class="search-bar" />
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Pontuação</th>
+                    <th>Meta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>José</td>
+                    <td>99%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Rafael</td>
+                    <td>97%</td>
+                    <td>3%</td>
+                  </tr>
+                  <tr>
+                    <td>Thiago</td>
+                    <td>43%</td>
+                    <td>7%</td>
+                  </tr>
+                  <tr>
+                    <td>Jenny</td>
+                    <td>100%</td>
+                    <td>9%</td>
+                  </tr>
+                  <tr>
+                    <td>Beatriz</td>
+                    <td>99%</td>
+                    <td>8%</td>
+                  </tr>
+                  <tr>
+                    <td>Cristina</td>
+                    <td>99%</td>
+                    <td>10%</td>
+                  </tr>
+                  <tr>
+                    <td>Bruna</td>
+                    <td>99%</td>
+                    <td>14%</td>
+                  </tr>
+                  <tr>
+                    <td>Ayla</td>
+                    <td>97%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Wesley</td>
+                    <td>99%</td>
+                    <td>0%</td>
+                  </tr>
+                  <tr>
+                    <td>Caio</td>
+                    <td>99%</td>
+                    <td>0%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+        </aside>
+        </section>
+        <div class="dashboard">
+            <header class="header">
+              <h1>Análise de desempenho</h1>
+              <div class="actions">
+                <button class="btn btn-edit">✏️ Editar</button>
+                <button class="btn btn-analyze">📊 Análise</button>
+              </div>
+            </header>
+            <nav class="tabs">
+              <ul>
+                <li class="active">Economia</li>
+                <li>Desempenho</li>
+                <li>Distribuição</li>
+                <li>Previsão do tempo</li>
+                <li>Potência</li>
+                <li>Turbinas</li>
+                <li>Chaves</li>
+              </ul>
+            </nav>
+            <section class="statistics">
+              <div class="stat-group">
+                <div class="stat-item">
+                  <span class="label">Tributos</span>
+                  <span class="value">18%</span>
+                </div>
+                <div class="stat-item">
+                  <span class="label">Meta de valor</span>
+                  <span class="value positive">↑ 62%</span>
+                </div>
+                <div class="stat-item">
+                  <span class="label">kWh</span>
+                  <span class="value">480.000</span>
+                </div>
+              </div>
+              <div class="time-filter">
+                Últimos 7 dias
+              </div>
+            </section>
+            <section class="table-section">
+              <header class="table-header">
+                <span>Meses</span>
+                <div class="table-actions">
+                  <input type="text" placeholder="🔍" class="search" />
+                  <button class="btn">🔧</button>
+                  <button class="btn">📈</button>
+                </div>
+              </header>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Mês</th>
+                    <th>Status</th>
+                    <th>Produção kWh</th>
+                    <th>Capacidade usada</th>
+                    <th>Manutenção no mês</th>
+                    <th>Falhas (%)</th>
+                    <th>Meta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Outubro</td>
+                    <td>Em andamento</td>
+                    <td>750.000</td>
+                    <td>88%</td>
+                    <td>Sim</td>
+                    <td>10%</td>
+                    <td class="down">↓ 3%</td>
+                  </tr>
+                  <tr>
+                    <td>Setembro</td>
+                    <td>Encerrado</td>
+                    <td>470.000</td>
+                    <td>44%</td>
+                    <td>Não</td>
+                    <td>8%</td>
+                    <td class="down">↓ 3%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>        
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

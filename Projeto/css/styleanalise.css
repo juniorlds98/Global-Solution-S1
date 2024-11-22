@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo global */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  p {
+    margin-top: 3px;
+    font-weight: bolder;
+    margin-left: 5px;
+  }
+  
+  hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  input, button {
+    font-family: inherit;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .stat {
+    margin: 10px 0;
+  }
+  
+  .stat span {
+    display: block;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .stat strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .energy-goal {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+  }
+  
+  .change {
+    font-size: 14px;
+  }
+  
+  .change.up {
+    color: green;
+  }
+  
+  .change.down {
+    color: red;
+  }
+  
+  /* Barra de busca */
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  tbody tr {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .down {
+    color: red;
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .actions .btn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-edit {
+    background-color: #ddd;
+  }
+  
+  .btn-analyze {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Tabs */
+  .tabs ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .tabs li {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .tabs .active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Estatísticas */
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  .stat-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stat-item .label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .stat-item .value {
+    font-size: 18px;
+  }
+  
+  .value.positive {
+    color: green;
+  }
+  
+  .value.down {
+    color: red;
+  }
+  
+  .time-filter {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Seção da Tabela */
+  .table-section {
+    margin-top: 20px;
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  
+  .group-1,
+  .group-2 {
+    display: flex;
+  }
+  
+  .group-2 {
+    text-align: center;
+  }
+  
+  .footer-1,
+  .footer-2 {
+    padding: 0 5px;
+  }
+  
+  .hamburguer-1 {
+    padding-left: 5px;
+  }
+  
+  .categoria-2 {
+    border: none;
+    background: none;
+    padding-left: 17px;
+  }
+  
+  .input-pesquisa {
+    margin-left: -6px;
+  }
+  
+  /* Projeto */
+  .projeto {
+    padding: 10px;
+  }
+  
