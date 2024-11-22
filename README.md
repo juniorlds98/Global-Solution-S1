@@ -26,6 +26,8 @@ Este projeto é o front que utiliza a api feita em python, pórem existe dados m
 ## Dependências
 * **Bibliotecas:** jquery, sweetalert2
 
+## Prototipação
+   * [Prototipação feita no Figma](https://www.figma.com/design/OPlSzzW4CbEvgSkUZAsLvr/Global-solution?node-id=46-292&t=FrrN5v2sFehoWr9L-1)  
 
 ## Informações Adicionais
 * **Melhorias futuras:** Hospedar a api em um servidor e sistema de ranqueamento.
