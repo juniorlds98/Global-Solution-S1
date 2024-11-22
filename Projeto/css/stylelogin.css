@@ -5,30 +5,34 @@
 }
 
 .voltar{
-    padding-right: 690px;
+    padding-right: 590px;
 
 }
 
 img{
     width: 40px;
+    cursor: pointer;
 }
 
 body{
     background-image: url(/Projeto/src/img/inspiring-view-sunset-light\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .total{
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
-    margin-top: 10%;
     align-items: center;
-    width: 737px;
-    height: 655px;
-    padding: 96px 0px;
+    width: 637px;
+    height: 455px;
+    padding: 26px 0px;
     backdrop-filter: blur(8px);
     background-color: #10182860;
 }
@@ -36,7 +40,7 @@ body{
 .continue{
     margin-bottom: 15px;
     width: 472px;
-    height: 35px;
+    height: 40px;
     margin-top: 32px;
     border-radius: 8px;
     color: white;
@@ -44,6 +48,7 @@ body{
     border: 1px solid var(--Primary-600, #7F56D9);
     background: var(--Primary-600, #7F56D9);
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    cursor: pointer;
 }
 
 .esqueceu--senha{
@@ -51,6 +56,7 @@ body{
     margin-top: 24px;
     color: #C1CED4;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .input{
@@ -59,6 +65,7 @@ body{
     border-radius: 8px;
     border: none;
     margin-top: 5px;
+    padding: 0 10px;
 }
 
 .senha{
