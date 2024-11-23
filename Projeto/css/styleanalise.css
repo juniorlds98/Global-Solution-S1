@@ -126,7 +126,10 @@
   tbody tr:not(:last-child) td {
     border-bottom: 1px solid #ddd;
   }
-  
+  .up {
+    color: green;
+  }
+
   .down {
     color: red;
   }

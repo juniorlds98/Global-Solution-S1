@@ -10,7 +10,7 @@
 <body>
     <header>
         <section class="group-1">
-            <img src="/Projeto/src/img/Menu hamburger.svg" alt="" class="hamburger-1">
+            <img src="./src/img/Menu hamburger.svg" alt="" class="hamburger-1">
             <p>Relatório uso energia mensal - Eficiência e Sustentabilidade</p>
         </section>
         <section class="group-2">
@@ -35,9 +35,7 @@
         <aside class="sidebar">
             <section class="stats">
               <h2>Meta de energia no mês</h2>
-              <div class="energy-goal">
-                <span class="percentage">75%</span>
-                <span class="change down">↓ 3</span>
+              <div class="energy-goal" id="metaMes">
               </div>
               <hr />
               <div class="stat">
@@ -47,7 +45,7 @@
               </div>
               <div class="stat">
                 <span>Quantidade ao mês</span>
-                <strong>3008</strong>
+                <strong id="quantMes">3008</strong>
                 <span class="change up">↑ 3</span>
               </div>
               <div class="stat">
@@ -176,7 +174,7 @@
                 <table>
                   <thead>
                     <tr>
-                      <th>Mês</th>
+                      <th>Ano/Mês</th>
                       <th>Status</th>
                       <th>Produção kWh</th>
                       <th>Capacidade usada</th>
@@ -185,32 +183,22 @@
                       <th>Meta</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>Outubro</td>
-                      <td>Em andamento</td>
-                      <td>750.000</td>
-                      <td>88%</td>
-                      <td>Sim</td>
-                      <td>10%</td>
-                      <td class="down">↓ 3%</td>
-                    </tr>
-                    <tr>
-                      <td>Setembro</td>
-                      <td>Encerrado</td>
-                      <td>470.000</td>
-                      <td>44%</td>
-                      <td>Não</td>
-                      <td>8%</td>
-                      <td class="down">↓ 3%</td>
-                    </tr>
+                  <tbody id="tabelaDados">
                   </tbody>
                 </table>
               </section>
-            </div>    
-        </section>    
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
 </body>
 </html>
+<script
+src="https://code.jquery.com/jquery-3.7.1.min.js"
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="conf.js"></script>
+<script src="analise.js"></script>
