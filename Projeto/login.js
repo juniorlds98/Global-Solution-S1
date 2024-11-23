@@ -1,4 +1,3 @@
-let teste
 $(frmLogin).on("submit", async (evt) => {
 	evt.preventDefault();
 	var dUser = $(user).val();
@@ -19,8 +18,6 @@ $(frmLogin).on("submit", async (evt) => {
                 dataType: "json",
                 data: JSON.stringify(dataJson),
             })
-            console.log(response)
-            teste = response
             if (!(response.result === 'False')){
                 conectar(parseInt(response.result))
             }else{
@@ -65,8 +62,8 @@ const conectar = (id) =>{
     })
     setTimeout(() => {
         let link = document.createElement("a");
-        link.href = "./dashboard.html";
-        //link.click();
+        link.href = "./analise.html";
+        link.click();
     }, 3500);
 
 }
